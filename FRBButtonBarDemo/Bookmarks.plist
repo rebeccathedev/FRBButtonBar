@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>RobPeck.com</string>
+		<key>url</key>
+		<string>http://www.robpeck.com</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>http://dealnews.com</string>
+		<key>title</key>
+		<string>DealNews</string>
+	</dict>
+    <dict>
+        <key>url</key>
+        <string>http://www.frobaus.com</string>
+        <key>title</key>
+        <string>Frobaus Software</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>Auburn University</string>
+        <key>children</key>
+        <array>
+            <dict>
+                <key>url</key>
+                <string>http://www.auburn.edu</string>
+                <key>title</key>
+                <string>Auburn University</string>
+            </dict>
+            <dict>
+                <key>url</key>
+                <string>http://www.eng.auburn.edu</string>
+                <key>title</key>
+                <string>Auburn Engineering</string>
+            </dict>
+            <dict>
+                <key>title</key>
+                <string>Auburn Sports</string>
+                <key>children</key>
+                <array>
+                    <dict>
+                        <key>url</key>
+                        <string>http://www.auburntigers.com</string>
+                        <key>title</key>
+                        <string>Auburn Tigers</string>
+                    </dict>
+                    <dict>
+                        <key>url</key>
+                        <string>http://www.auburntigers.com/sports/m-footbl/aub-m-footbl-body.html</string>
+                        <key>title</key>
+                        <string>Auburn Football</string>
+                    </dict>
+                    <dict>
+                        <key>url</key>
+                        <string>http://www.auburntigers.com/sports/m-baskbl/aub-m-baskbl-body.html</string>
+                        <key>title</key>
+                        <string>Auburn Basketball</string>
+                    </dict>
+                    <dict>
+                        <key>url</key>
+                        <string>http://wp.auburn.edu/hockey/</string>
+                        <key>title</key>
+                        <string>Auburn Hockey</string>
+                    </dict>
+                </array>
+            </dict>
+        </array>
+    </dict>
+</array>
+</plist>

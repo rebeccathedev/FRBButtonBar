@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF0287451A49135600374B26 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0287441A49135600374B26 /* WebKit.framework */; };
+		CF0287481A49138B00374B26 /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0287471A49138B00374B26 /* Bookmark.m */; };
+		CF02874A1A4913C600374B26 /* Bookmarks.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF0287491A4913C600374B26 /* Bookmarks.plist */; };
+		CF02874C1A491AEA00374B26 /* FRBButtonBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CF02874B1A491AEA00374B26 /* FRBButtonBar.podspec */; };
+		CF0287561A492CFE00374B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0287551A492CFE00374B26 /* Main.storyboard */; };
+		CF9EC9821A4295FF00EB6968 /* FRBButtonBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CF24508A1A2FEA880030AE5A /* FRBButtonBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF9EC9831A4295FF00EB6968 /* FRBButtonBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24508B1A2FEA880030AE5A /* FRBButtonBarItem.m */; };
+		CF9EC9841A4295FF00EB6968 /* FRBButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CF24508D1A2FF7E40030AE5A /* FRBButton.h */; };
+		CF9EC9851A4295FF00EB6968 /* FRBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24508E1A2FF7E40030AE5A /* FRBButton.m */; };
+		CF9EC9881A4295FF00EB6968 /* FRBButtonBarControl.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9EC94E1A428C1700EB6968 /* FRBButtonBarControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF9EC9891A4295FF00EB6968 /* FRBButtonBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9EC94F1A428C1700EB6968 /* FRBButtonBarControl.m */; };
+		CF9EC98A1A4295FF00EB6968 /* FRBButtonBarProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9EC9511A42947800EB6968 /* FRBButtonBarProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFDD75221A4523AE0087951F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD75211A4523AE0087951F /* AppDelegate.m */; };
+		CFDD75241A4523AE0087951F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD75231A4523AE0087951F /* main.m */; };
+		CFDD75271A4523AE0087951F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD75261A4523AE0087951F /* ViewController.m */; };
+		CFDD75291A4523AE0087951F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDD75281A4523AE0087951F /* Images.xcassets */; };
+		CFDD75451A4525490087951F /* FRBButtonBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9EC9571A4295DC00EB6968 /* FRBButtonBar.framework */; };
+		CFF9CC6E1A488C8000216B81 /* FRBMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF9CC6C1A488C8000216B81 /* FRBMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFF9CC6F1A488C8000216B81 /* FRBMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF9CC6D1A488C8000216B81 /* FRBMenuItem.m */; };
+		CFF9CC721A48A9A400216B81 /* NSImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF9CC701A48A9A400216B81 /* NSImage+Tint.h */; };
+		CFF9CC731A48A9A400216B81 /* NSImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF9CC711A48A9A400216B81 /* NSImage+Tint.m */; };
+		CFF9CC781A48B8AA00216B81 /* FRBButtonBar.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2450861A2FD3F80030AE5A /* FRBButtonBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFF9CC951A48CEF800216B81 /* DownArrow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CFF9CC941A48CEF800216B81 /* DownArrow.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFDD753F1A4523DD0087951F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2450581A2FD3BE0030AE5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF9EC9561A4295DC00EB6968;
+			remoteInfo = FRBButtonBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF0287441A49135600374B26 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CF0287461A49138B00374B26 /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		CF0287471A49138B00374B26 /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+		CF0287491A4913C600374B26 /* Bookmarks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bookmarks.plist; sourceTree = "<group>"; };
+		CF02874B1A491AEA00374B26 /* FRBButtonBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FRBButtonBar.podspec; sourceTree = "<group>"; };
+		CF0287511A4921D900374B26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CF0287551A492CFE00374B26 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF2450861A2FD3F80030AE5A /* FRBButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBButtonBar.h; sourceTree = "<group>"; };
+		CF24508A1A2FEA880030AE5A /* FRBButtonBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBButtonBarItem.h; sourceTree = "<group>"; };
+		CF24508B1A2FEA880030AE5A /* FRBButtonBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBButtonBarItem.m; sourceTree = "<group>"; };
+		CF24508D1A2FF7E40030AE5A /* FRBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBButton.h; sourceTree = "<group>"; };
+		CF24508E1A2FF7E40030AE5A /* FRBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBButton.m; sourceTree = "<group>"; };
+		CF9EC94E1A428C1700EB6968 /* FRBButtonBarControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBButtonBarControl.h; sourceTree = "<group>"; };
+		CF9EC94F1A428C1700EB6968 /* FRBButtonBarControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBButtonBarControl.m; sourceTree = "<group>"; };
+		CF9EC9511A42947800EB6968 /* FRBButtonBarProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRBButtonBarProtocols.h; sourceTree = "<group>"; };
+		CF9EC9571A4295DC00EB6968 /* FRBButtonBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FRBButtonBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDD751C1A4523AE0087951F /* FRBButtonBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRBButtonBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDD751F1A4523AE0087951F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDD75201A4523AE0087951F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFDD75211A4523AE0087951F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFDD75231A4523AE0087951F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFDD75251A4523AE0087951F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CFDD75261A4523AE0087951F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFDD75281A4523AE0087951F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFDD75431A4524800087951F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF9CC6C1A488C8000216B81 /* FRBMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBMenuItem.h; sourceTree = "<group>"; };
+		CFF9CC6D1A488C8000216B81 /* FRBMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBMenuItem.m; sourceTree = "<group>"; };
+		CFF9CC701A48A9A400216B81 /* NSImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Tint.h"; sourceTree = "<group>"; };
+		CFF9CC711A48A9A400216B81 /* NSImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Tint.m"; sourceTree = "<group>"; };
+		CFF9CC941A48CEF800216B81 /* DownArrow.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DownArrow.pdf; sourceTree = "<group>"; };
+		CFF9CC971A48CFAE00216B81 /* DownArrow-Source.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "DownArrow-Source.pdf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF9EC9531A4295DC00EB6968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDD75191A4523AE0087951F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0287451A49135600374B26 /* WebKit.framework in Frameworks */,
+				CFDD75451A4525490087951F /* FRBButtonBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2450571A2FD3BE0030AE5A = {
+			isa = PBXGroup;
+			children = (
+				CF02874B1A491AEA00374B26 /* FRBButtonBar.podspec */,
+				CF0287511A4921D900374B26 /* README.md */,
+				CF9EC9581A4295DC00EB6968 /* FRBButtonBar */,
+				CFDD751D1A4523AE0087951F /* FRBButtonBarDemo */,
+				CF2450611A2FD3BE0030AE5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2450611A2FD3BE0030AE5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF9EC9571A4295DC00EB6968 /* FRBButtonBar.framework */,
+				CFDD751C1A4523AE0087951F /* FRBButtonBarDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF9EC9581A4295DC00EB6968 /* FRBButtonBar */ = {
+			isa = PBXGroup;
+			children = (
+				CFF9CC961A48CF7F00216B81 /* Creative */,
+				CF2450861A2FD3F80030AE5A /* FRBButtonBar.h */,
+				CF24508A1A2FEA880030AE5A /* FRBButtonBarItem.h */,
+				CF24508B1A2FEA880030AE5A /* FRBButtonBarItem.m */,
+				CF24508D1A2FF7E40030AE5A /* FRBButton.h */,
+				CF24508E1A2FF7E40030AE5A /* FRBButton.m */,
+				CF9EC94E1A428C1700EB6968 /* FRBButtonBarControl.h */,
+				CF9EC94F1A428C1700EB6968 /* FRBButtonBarControl.m */,
+				CF9EC9511A42947800EB6968 /* FRBButtonBarProtocols.h */,
+				CFF9CC6C1A488C8000216B81 /* FRBMenuItem.h */,
+				CFF9CC6D1A488C8000216B81 /* FRBMenuItem.m */,
+				CF9EC9591A4295DC00EB6968 /* Supporting Files */,
+				CFF9CC701A48A9A400216B81 /* NSImage+Tint.h */,
+				CFF9CC711A48A9A400216B81 /* NSImage+Tint.m */,
+			);
+			path = FRBButtonBar;
+			sourceTree = "<group>";
+		};
+		CF9EC9591A4295DC00EB6968 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFF9CC941A48CEF800216B81 /* DownArrow.pdf */,
+				CFDD75431A4524800087951F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFDD751D1A4523AE0087951F /* FRBButtonBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CF0287551A492CFE00374B26 /* Main.storyboard */,
+				CF0287441A49135600374B26 /* WebKit.framework */,
+				CFDD75201A4523AE0087951F /* AppDelegate.h */,
+				CFDD75211A4523AE0087951F /* AppDelegate.m */,
+				CFDD75251A4523AE0087951F /* ViewController.h */,
+				CFDD75261A4523AE0087951F /* ViewController.m */,
+				CFDD75281A4523AE0087951F /* Images.xcassets */,
+				CFDD751E1A4523AE0087951F /* Supporting Files */,
+				CF0287461A49138B00374B26 /* Bookmark.h */,
+				CF0287471A49138B00374B26 /* Bookmark.m */,
+			);
+			path = FRBButtonBarDemo;
+			sourceTree = "<group>";
+		};
+		CFDD751E1A4523AE0087951F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD751F1A4523AE0087951F /* Info.plist */,
+				CFDD75231A4523AE0087951F /* main.m */,
+				CF0287491A4913C600374B26 /* Bookmarks.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFF9CC961A48CF7F00216B81 /* Creative */ = {
+			isa = PBXGroup;
+			children = (
+				CFF9CC971A48CFAE00216B81 /* DownArrow-Source.pdf */,
+			);
+			name = Creative;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF9EC9541A4295DC00EB6968 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9EC9881A4295FF00EB6968 /* FRBButtonBarControl.h in Headers */,
+				CF9EC98A1A4295FF00EB6968 /* FRBButtonBarProtocols.h in Headers */,
+				CF9EC9821A4295FF00EB6968 /* FRBButtonBarItem.h in Headers */,
+				CFF9CC6E1A488C8000216B81 /* FRBMenuItem.h in Headers */,
+				CF9EC9841A4295FF00EB6968 /* FRBButton.h in Headers */,
+				CFF9CC721A48A9A400216B81 /* NSImage+Tint.h in Headers */,
+				CFF9CC781A48B8AA00216B81 /* FRBButtonBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF9EC9561A4295DC00EB6968 /* FRBButtonBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9EC9701A4295DD00EB6968 /* Build configuration list for PBXNativeTarget "FRBButtonBar" */;
+			buildPhases = (
+				CF9EC9521A4295DC00EB6968 /* Sources */,
+				CF9EC9531A4295DC00EB6968 /* Frameworks */,
+				CF9EC9541A4295DC00EB6968 /* Headers */,
+				CF9EC9551A4295DC00EB6968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRBButtonBar;
+			productName = FRBButtonBar;
+			productReference = CF9EC9571A4295DC00EB6968 /* FRBButtonBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFDD751B1A4523AE0087951F /* FRBButtonBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDD75391A4523AE0087951F /* Build configuration list for PBXNativeTarget "FRBButtonBarDemo" */;
+			buildPhases = (
+				CFDD75181A4523AE0087951F /* Sources */,
+				CFDD75191A4523AE0087951F /* Frameworks */,
+				CFDD751A1A4523AE0087951F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFDD75401A4523DD0087951F /* PBXTargetDependency */,
+			);
+			name = FRBButtonBarDemo;
+			productName = FRBButtonBarDemo;
+			productReference = CFDD751C1A4523AE0087951F /* FRBButtonBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2450581A2FD3BE0030AE5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Frobaus;
+				TargetAttributes = {
+					CF9EC9561A4295DC00EB6968 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CFDD751B1A4523AE0087951F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CF24505B1A2FD3BE0030AE5A /* Build configuration list for PBXProject "FRBButtonBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2450571A2FD3BE0030AE5A;
+			productRefGroup = CF2450611A2FD3BE0030AE5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF9EC9561A4295DC00EB6968 /* FRBButtonBar */,
+				CFDD751B1A4523AE0087951F /* FRBButtonBarDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF9EC9551A4295DC00EB6968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF9CC951A48CEF800216B81 /* DownArrow.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDD751A1A4523AE0087951F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDD75291A4523AE0087951F /* Images.xcassets in Resources */,
+				CF02874A1A4913C600374B26 /* Bookmarks.plist in Resources */,
+				CF02874C1A491AEA00374B26 /* FRBButtonBar.podspec in Resources */,
+				CF0287561A492CFE00374B26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF9EC9521A4295DC00EB6968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9EC9891A4295FF00EB6968 /* FRBButtonBarControl.m in Sources */,
+				CF9EC9851A4295FF00EB6968 /* FRBButton.m in Sources */,
+				CFF9CC6F1A488C8000216B81 /* FRBMenuItem.m in Sources */,
+				CF9EC9831A4295FF00EB6968 /* FRBButtonBarItem.m in Sources */,
+				CFF9CC731A48A9A400216B81 /* NSImage+Tint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDD75181A4523AE0087951F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDD75271A4523AE0087951F /* ViewController.m in Sources */,
+				CFDD75241A4523AE0087951F /* main.m in Sources */,
+				CFDD75221A4523AE0087951F /* AppDelegate.m in Sources */,
+				CF0287481A49138B00374B26 /* Bookmark.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFDD75401A4523DD0087951F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF9EC9561A4295DC00EB6968 /* FRBButtonBar */;
+			targetProxy = CFDD753F1A4523DD0087951F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF24507E1A2FD3BE0030AE5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CF24507F1A2FD3BE0030AE5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF9EC9711A4295DD00EB6968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FRBButtonBar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF9EC9721A4295DD00EB6968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = FRBButtonBar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFDD753A1A4523AE0087951F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FRBButtonBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFDD753B1A4523AE0087951F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FRBButtonBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF24505B1A2FD3BE0030AE5A /* Build configuration list for PBXProject "FRBButtonBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF24507E1A2FD3BE0030AE5A /* Debug */,
+				CF24507F1A2FD3BE0030AE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF9EC9701A4295DD00EB6968 /* Build configuration list for PBXNativeTarget "FRBButtonBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9EC9711A4295DD00EB6968 /* Debug */,
+				CF9EC9721A4295DD00EB6968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFDD75391A4523AE0087951F /* Build configuration list for PBXNativeTarget "FRBButtonBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDD753A1A4523AE0087951F /* Debug */,
+				CFDD753B1A4523AE0087951F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2450581A2FD3BE0030AE5A /* Project object */;
+}

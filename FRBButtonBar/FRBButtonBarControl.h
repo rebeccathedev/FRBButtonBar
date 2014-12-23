@@ -15,8 +15,19 @@
     NSMenu *moreMenu;
 }
 
+/**
+ *  A delegate that implements the FRBButtonBarControlDelegate protocol.
+ */
 @property (nonatomic, weak) IBOutlet id <FRBButtonBarControlDelegate> delegate;
+
+/**
+ *  A data source that implements the FRBButtonBarControlDataSource protocol.
+ */
 @property (nonatomic, weak) IBOutlet id <FRBButtonBarControlDataSource> dataSource;
+
+/**
+ *  Font properties that are applied to the buttons on the button bar.
+ */
 @property NSFont *font;
 
 /**

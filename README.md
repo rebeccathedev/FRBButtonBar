@@ -6,6 +6,7 @@ FRBButtonBar is an button bar implemntation designed to superficially resemble t
 * Overflow control: If there are more buttons than the bar can handle, they overflow into a menu off the right side (again, like Safari).
 * Drag buttons to rearrange them.
 * Infinite level of child items. Well, there's probably some theoretical Apple imposed limit, but I haven't found it yet. :)
+* Makes no assumptions about colors or the like. Uses system colors internally. Wrap it in a container NSView to give it background colors, gradients, etc.
 
 This is actually something I've been tinkering with for some months. Much of the code for this project was inspired by the excellent KPCTabsControl by Cédric Foellmi.
 
@@ -38,6 +39,7 @@ A Demonstration app is available. In general, here are the following things you 
 - (void)buttonBarControl:(FRBButtonBarControl *)buttonBarControl didClickItem:(FRBButtonBarItem*)item;
 
 // Called when the user rearranges the buttons. You should now store the new arrangement.
+// Optional. If it's not implemented, rearranging is disabled.
 - (void)buttonBarControl:(FRBButtonBarControl *)buttonBarControl didReorderItems:(NSArray *)itemArray;
 ```
 

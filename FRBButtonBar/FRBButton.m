@@ -11,12 +11,6 @@
 #import "FRBMenuItem.h"
 #import "NSImage+Tint.h"
 
-@interface FRBButton ()
-
-@property(nonatomic, strong) NSTrackingArea *trackingArea;
-
-@end
-
 @implementation FRBButton
 
 @synthesize representedItem;
@@ -53,20 +47,18 @@
     FRBButton *button = [[FRBButton allocWithZone:zone] initWithFrame:self.frame];
     [button setTitle:[self title]];
     [button setFont:[self font]];
-    [button setImage:overImage];
+    [button setImage:[self image]];
     [button setShowsBorderOnlyWhileMouseInside:NO];
-    [button removeTrackingArea:[button trackingArea]];
     return button;
 }
 
 - (void)setup
 {
-    [self setButtonType:NSMomentaryLightButton];
+    [self setButtonType:NSMomentaryPushInButton];
     [self setBezelStyle:NSRecessedBezelStyle];
     [self setBordered:YES];
     [self setFocusRingType:NSFocusRingTypeNone];
     [self setShowsBorderOnlyWhileMouseInside:YES];
-    [self setButtonType:NSMomentaryLightButton];
     [self setImagePosition:NSImageRight];
     [self.cell sendActionOn:NSLeftMouseDownMask | NSPeriodicMask];
     [self setContinuous:YES];
@@ -81,22 +73,10 @@
         [contextMenu setDelegate:self];
         [self setMenu:contextMenu];
         
-        // We only need to worry about tracking if we actually have a content
-        // menu. This is so that we can swap the images around when the user
-        // mouses over.
-        NSTrackingAreaOptions focusTrackingAreaOptions = NSTrackingActiveInActiveApp;
-        focusTrackingAreaOptions |= NSTrackingMouseEnteredAndExited;
-        focusTrackingAreaOptions |= NSTrackingAssumeInside;
-        focusTrackingAreaOptions |= NSTrackingInVisibleRect;
-        
-        _trackingArea = [[NSTrackingArea alloc] initWithRect:NSZeroRect
-                                                                         options:focusTrackingAreaOptions owner:self userInfo:nil];
-        [self addTrackingArea:_trackingArea];
-        
         NSString *filePath = [[NSBundle bundleForClass:[FRBButton class]] pathForResource:@"DownArrow" ofType:@"pdf"];
         NSData *imageData = [NSData dataWithContentsOfFile:filePath];
-        normalImage = [[NSImage alloc] initWithData:imageData];
-        overImage = [normalImage imageTintedWithColor:[NSColor selectedMenuItemTextColor]];
+        NSImage *normalImage = [[NSImage alloc] initWithData:imageData];
+        [normalImage setTemplate:YES];
         filePath = nil;
         imageData = nil;
         
@@ -152,16 +132,6 @@
     [self setHighlighted:NO];
     [self setShowsBorderOnlyWhileMouseInside:YES];
     [super mouseUp:theEvent];
-}
-
-- (void)mouseEntered:(NSEvent *)theEvent
-{
-    [self setImage:overImage];
-}
-
-- (void)mouseExited:(NSEvent *)theEvent
-{
-    [self setImage:normalImage];
 }
 
 @end

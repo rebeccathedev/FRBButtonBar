@@ -672,7 +672,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="800" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="5T7-S3-kBC">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="5T7-S3-kBC" customClass="ContainerView">
                                 <rect key="frame" x="0.0" y="372" width="800" height="28"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="KVG-uL-GlK" customClass="FRBButtonBarControl">
@@ -689,7 +689,9 @@
                             </customView>
                             <webView translatesAutoresizingMaskIntoConstraints="NO" id="7dd-Ce-tMC">
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="372"/>
-                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                                    <nil key="identifier"/>
+                                </webPreferences>
                             </webView>
                         </subviews>
                         <constraints>

@@ -19,6 +19,7 @@
 		CF9EC9881A4295FF00EB6968 /* FRBButtonBarControl.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9EC94E1A428C1700EB6968 /* FRBButtonBarControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF9EC9891A4295FF00EB6968 /* FRBButtonBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9EC94F1A428C1700EB6968 /* FRBButtonBarControl.m */; };
 		CF9EC98A1A4295FF00EB6968 /* FRBButtonBarProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9EC9511A42947800EB6968 /* FRBButtonBarProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFB3E6811A49E39800F6CC02 /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3E6801A49E39800F6CC02 /* ContainerView.m */; };
 		CFDD75221A4523AE0087951F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD75211A4523AE0087951F /* AppDelegate.m */; };
 		CFDD75241A4523AE0087951F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD75231A4523AE0087951F /* main.m */; };
 		CFDD75271A4523AE0087951F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD75261A4523AE0087951F /* ViewController.m */; };
@@ -59,6 +60,8 @@
 		CF9EC94F1A428C1700EB6968 /* FRBButtonBarControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBButtonBarControl.m; sourceTree = "<group>"; };
 		CF9EC9511A42947800EB6968 /* FRBButtonBarProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRBButtonBarProtocols.h; sourceTree = "<group>"; };
 		CF9EC9571A4295DC00EB6968 /* FRBButtonBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FRBButtonBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB3E67F1A49E39800F6CC02 /* ContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
+		CFB3E6801A49E39800F6CC02 /* ContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
 		CFDD751C1A4523AE0087951F /* FRBButtonBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRBButtonBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDD751F1A4523AE0087951F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFDD75201A4523AE0087951F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				CFDD751E1A4523AE0087951F /* Supporting Files */,
 				CF0287461A49138B00374B26 /* Bookmark.h */,
 				CF0287471A49138B00374B26 /* Bookmark.m */,
+				CFB3E67F1A49E39800F6CC02 /* ContainerView.h */,
+				CFB3E6801A49E39800F6CC02 /* ContainerView.m */,
 			);
 			path = FRBButtonBarDemo;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				CFDD75241A4523AE0087951F /* main.m in Sources */,
 				CFDD75221A4523AE0087951F /* AppDelegate.m in Sources */,
 				CF0287481A49138B00374B26 /* Bookmark.m in Sources */,
+				CFB3E6811A49E39800F6CC02 /* ContainerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

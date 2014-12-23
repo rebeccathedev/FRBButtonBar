@@ -10,10 +10,7 @@
 #import "FRBButtonBarItem.h"
 #import "FRBMenuItem.h"
 
-@interface FRBButton : NSButton <NSCopying, NSMenuDelegate, FRBButtonBarMenuItemDelegate> {
-    NSImage *normalImage;
-    NSImage *overImage;
-}
+@interface FRBButton : NSButton <NSCopying, NSMenuDelegate, FRBButtonBarMenuItemDelegate>
 
 @property (nonatomic, weak) FRBButtonBarItem *representedItem;
 

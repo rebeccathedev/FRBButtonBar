@@ -51,7 +51,8 @@
 /**
  *  Called when a user reorders the items. The delegate is responsible for 
  *  storing the proper order, so the delegate should now store the reordered 
- *  array of items.
+ *  array of items. If the delegate doesn't implement this property, the button
+ *  bar will not allow rearranging.
  *
  *  @param buttonBarControl The button bar
  *  @param itemArray        A reordered array of items.

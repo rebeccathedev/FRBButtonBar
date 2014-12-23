@@ -286,26 +286,28 @@
 {
     FRBButton *selectedButton = sender;
     
-    [[selectedButton cell] setHighlighted:YES];
-    
-    for (FRBButton *button in [self buttons]) {
-        [button setState:(button == selectedButton) ? NSOnState : NSOffState];
-        [button highlight:self.isHighlighted];
-    }
-    
-    [[NSApplication sharedApplication] sendAction:self.action to:self.target from:self];
-    
-    NSEvent *currentEvent = [NSApp currentEvent];
-    
-    // watch for a drag event and initiate dragging if a drag is found...
-    NSEvent *event = [self.window nextEventMatchingMask:NSLeftMouseUpMask|NSLeftMouseDraggedMask
-                                              untilDate:[NSDate distantFuture]
-                                                 inMode:NSEventTrackingRunLoopMode
-                                                dequeue:NO];
-    
-    if (event.type == NSLeftMouseDragged) {
-        [self reorderButton:sender withEvent:currentEvent];
-        return;
+    // If the delegate doesn't implement this method, we don't need to allow
+    // rearranging because the delegate will have no way to store the rearranged
+    // data so we can rebuild it.
+    if ([[self delegate] respondsToSelector:@selector(buttonBarControl:didReorderItems:)]) {
+        
+        NSEvent *currentEvent = [NSApp currentEvent];
+        
+        // watch for a drag event and initiate dragging if a drag is found...
+        NSEvent *event = [self.window nextEventMatchingMask:NSLeftMouseUpMask | NSLeftMouseDraggedMask
+                                                  untilDate:[NSDate distantFuture]
+                                                     inMode:NSEventTrackingRunLoopMode
+                                                    dequeue:NO];
+        
+        if (event.type == NSLeftMouseDragged) {
+            [self reorderButton:sender withEvent:currentEvent];
+            return;
+        }
+    } else {
+        for (FRBButton *button in [self buttons]) {
+            [button setHighlighted:NO];
+            [button setShowsBorderOnlyWhileMouseInside:YES];
+        }
     }
     
     if ([selectedButton menu] != nil) {

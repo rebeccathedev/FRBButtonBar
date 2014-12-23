@@ -21,6 +21,11 @@
     return self;
 }
 
+- (void)addChildren:(NSArray*)childrenArray
+{
+    [children addObjectsFromArray:childrenArray];
+}
+
 - (void)addChild:(FRBButtonBarItem*)child
 {
     [children addObject:child];

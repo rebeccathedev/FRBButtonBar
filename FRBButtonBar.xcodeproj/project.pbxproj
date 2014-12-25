@@ -10,8 +10,8 @@
 		CF0287451A49135600374B26 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0287441A49135600374B26 /* WebKit.framework */; };
 		CF0287481A49138B00374B26 /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0287471A49138B00374B26 /* Bookmark.m */; };
 		CF02874A1A4913C600374B26 /* Bookmarks.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF0287491A4913C600374B26 /* Bookmarks.plist */; };
-		CF02874C1A491AEA00374B26 /* FRBButtonBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CF02874B1A491AEA00374B26 /* FRBButtonBar.podspec */; };
 		CF0287561A492CFE00374B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0287551A492CFE00374B26 /* Main.storyboard */; };
+		CF0FF39D1A4CB4B300D27527 /* FRBButtonBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CF0FF39C1A4CB4B300D27527 /* FRBButtonBar.podspec */; };
 		CF9EC9821A4295FF00EB6968 /* FRBButtonBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CF24508A1A2FEA880030AE5A /* FRBButtonBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF9EC9831A4295FF00EB6968 /* FRBButtonBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24508B1A2FEA880030AE5A /* FRBButtonBarItem.m */; };
 		CF9EC9841A4295FF00EB6968 /* FRBButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CF24508D1A2FF7E40030AE5A /* FRBButton.h */; };
@@ -48,9 +48,9 @@
 		CF0287461A49138B00374B26 /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
 		CF0287471A49138B00374B26 /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
 		CF0287491A4913C600374B26 /* Bookmarks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bookmarks.plist; sourceTree = "<group>"; };
-		CF02874B1A491AEA00374B26 /* FRBButtonBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FRBButtonBar.podspec; sourceTree = "<group>"; };
 		CF0287511A4921D900374B26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CF0287551A492CFE00374B26 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF0FF39C1A4CB4B300D27527 /* FRBButtonBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FRBButtonBar.podspec; sourceTree = "<group>"; };
 		CF2450861A2FD3F80030AE5A /* FRBButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBButtonBar.h; sourceTree = "<group>"; };
 		CF24508A1A2FEA880030AE5A /* FRBButtonBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBButtonBarItem.h; sourceTree = "<group>"; };
 		CF24508B1A2FEA880030AE5A /* FRBButtonBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBButtonBarItem.m; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		CF2450571A2FD3BE0030AE5A = {
 			isa = PBXGroup;
 			children = (
-				CF02874B1A491AEA00374B26 /* FRBButtonBar.podspec */,
+				CF0FF39C1A4CB4B300D27527 /* FRBButtonBar.podspec */,
 				CF0287511A4921D900374B26 /* README.md */,
 				CF9EC9581A4295DC00EB6968 /* FRBButtonBar */,
 				CFDD751D1A4523AE0087951F /* FRBButtonBarDemo */,
@@ -283,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0FF39D1A4CB4B300D27527 /* FRBButtonBar.podspec in Resources */,
 				CFF9CC951A48CEF800216B81 /* DownArrow.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +294,6 @@
 			files = (
 				CFDD75291A4523AE0087951F /* Images.xcassets in Resources */,
 				CF02874A1A4913C600374B26 /* Bookmarks.plist in Resources */,
-				CF02874C1A491AEA00374B26 /* FRBButtonBar.podspec in Resources */,
 				CF0287561A492CFE00374B26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

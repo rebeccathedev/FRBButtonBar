@@ -10,6 +10,24 @@ FRBButtonBar is an button bar implemntation designed to superficially resemble t
 
 This is actually something I've been tinkering with for some months. Much of the code for this project was inspired by the excellent KPCTabsControl by Cédric Foellmi.
 
+# Screenshots
+
+![Normal](https://raw.githubusercontent.com/peckrob/FRBButtonBar/master/Screenshots/normal.png?raw=true "Normal")
+
+*Normal Mode*
+
+![Dropdown Open](https://raw.githubusercontent.com/peckrob/FRBButtonBar/master/Screenshots/open.png?raw=true "Dropdown Open")
+
+*Dropdown Menu Open*
+
+![Rearranging](https://raw.githubusercontent.com/peckrob/FRBButtonBar/master/Screenshots/drag.png?raw=true "Rearranging")
+
+*Rearranging Mode. Bar buttons animate sliding.*
+
+![Overflow Mode](https://raw.githubusercontent.com/peckrob/FRBButtonBar/master/Screenshots/overflow.png?raw=true "Overflow Mode")
+
+*Demonstrating Overflow Mode*
+
 # Installation
 
 Installation is dead easy with Cocoapods.

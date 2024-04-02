@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
     spec.version      = '0.1'
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/peckrob/FRBButtonBar'
-    spec.authors      = { 'Rob Peck' => 'rob@robpeck.com' }
+    spec.authors      = { 'Rebecca Peck' => 'me@rebeccapeck.org' }
     spec.summary      = 'A button bar designed to resemble Safari\'s bookmarks bar in behavior and appearance.'
     spec.source       = { :git => 'https://github.com/peckrob/FRBButtonBar.git', :tag => 'v0.1' }
     spec.requires_arc = true

@@ -67,4 +67,4 @@ MIT.
 
 # Author
 
-Rob Peck ([@codelemur](https://twitter.com/codelemur))
+Rebecca Peck

@@ -2,7 +2,7 @@
 //  ViewController.h
 //  FRBButtonBarDemo
 //
-//  Created by Rob Peck on 12/19/14.
+//  Created by Rebecca Peck on 12/19/14.
 //  Copyright (c) 2014 Frobaus. All rights reserved.
 //
 

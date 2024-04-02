@@ -2,7 +2,7 @@
 //  FRBButtonBarControl.h
 //  FRBButtonBar
 //
-//  Created by Rob Peck on 12/17/14.
+//  Created by Rebecca Peck on 12/17/14.
 //  Copyright (c) 2014 Frobaus. All rights reserved.
 //
 
